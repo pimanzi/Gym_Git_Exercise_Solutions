@@ -85,3 +85,11 @@ To https://github.com/pimanzi/Gym_Git_Exercise_Solutions.git
  * [new branch]      dev -> dev
 branch 'dev' set up to track 'origin/dev'
 ```
+
+## BUNDLE 1
+
+### EXERCISE 2
+
+```Bash
+
+```
