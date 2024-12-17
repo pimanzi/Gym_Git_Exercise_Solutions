@@ -91,5 +91,86 @@ branch 'dev' set up to track 'origin/dev'
 ### EXERCISE 2
 
 ```Bash
+~/Gym_Git_Exercise_Solutions$ touch home.html
+~/Gym_Git_Exercise_Solutions$ git add home.html
+~/Gym_Git_Exercise_Solutions$ git stash save "Added home.html"
+Saved working directory and index state On main: Added home.html
+~/Gym_Git_Exercise_Solutions$ touch about.html
+~/Gym_Git_Exercise_Solutions$ git add .
+~/Gym_Git_Exercise_Solutions$ git stash save "Added about.html"
+Saved working directory and index state On main: Added about.html
+~/Gym_Git_Exercise_Solutions$ git git stash list
+git: 'git' is not a git command. See 'git --help'.
 
+The most similar command is
+        init
+~/Gym_Git_Exercise_Solutions$ git stash list
+stash@{0}: On main: Added about.html
+stash@{1}: On main: Added home.html
+~/Gym_Git_Exercise_Solutions$ touch touch team.html
+~/Gym_Git_Exercise_Solutions$  touch team.html
+~/Gym_Git_Exercise_Solutions$ git stash list
+stash@{0}: On main: Added about.html
+stash@{1}: On main: Added home.html
+~/Gym_Git_Exercise_Solutions$ git stash save "Added team.html"
+No local changes to save
+~/Gym_Git_Exercise_Solutions$ git add .
+~/Gym_Git_Exercise_Solutions$ git stash save "Added team.html"
+Saved working directory and index state On main: Added team.html
+~/Gym_Git_Exercise_Solutions$ git stash list
+stash@{0}: On main: Added team.html
+stash@{1}: On main: Added about.html
+stash@{2}: On main: Added home.html
+~/Gym_Git_Exercise_Solutions$ git stash pop stash@{1}
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+
+Dropped stash@{1} (dc2176fd88f91e967129c81f6c9733df7e0d126b)
+~/Gym_Git_Exercise_Solutions$ git stash list
+stash@{0}: On main: Added team.html
+stash@{1}: On main: Added home.html
+~/Gym_Git_Exercise_Solutions$ git stash pop stash@{1}
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   home.html
+
+Dropped stash@{1} (6011b6061b4d4722927c7784fba39e90c9f874a9)
+~/Gym_Git_Exercise_Solutions$ git add .
+~/Gym_Git_Exercise_Solutions$ git commit -m "adding html files"
+[main 377d7d9] adding html files
+ 2 files changed, 22 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+~/Gym_Git_Exercise_Solutions$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 537 bytes | 537.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/pimanzi/Gym_Git_Exercise_Solutions.git
+   207fbdb..377d7d9  main -> main
+~/Gym_Git_Exercise_Solutions$ git stash list
+stash@{0}: On main: Added team.html
+~/Gym_Git_Exercise_Solutions$ git stash pop stash@{0}
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+Dropped stash@{0} (8cfd0d560cc04ba963441af61deb59ade5ebaf76)
+~/Gym_Git_Exercise_Solutions$ git reset --hard HEAD
+HEAD is now at 377d7d9 adding html files
+~/Gym_Git_Exercise_Solutions$
 ```
