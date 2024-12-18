@@ -219,13 +219,42 @@ branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 /Gym_Git_Exercise_Solutions$
 ```
 
-# BUNDLE 3
+## BUNDLE 2
+
+### EXERCISE 2
+
+```Bash
+
+/git checkout -b main
+ 1978  git checkout main
+ 1980  git add .
+ 1981  git commit -m "updaing readme"
+ 1982  git push
+ 1984  git checkout main
+ 1985  git pull
+ 1986  git checkout -b ft/service-redesign
+ 1987  git add .
+ 1988  git commit -m "added services list"
+ 1989  git push
+ 1990  git push --set-upstream origin ft/service-redesign
+ 1991  git checkout main
+ 1992  git add .
+ 1993  git commit -m "adding new services list"
+ 1994  git push
+ 1995  git checkout ft/service-redesign
+ 1996  git merge main
+ 1997  git add .
+ 1998  git commit
+ 1999  git push
+```
+
+## BUNDLE 3
 
 ### EXERCISE 1
 
 ```Bash
 
- 2015  git branch
+git branch
  2016  git checkout main
  2017  git checkout -b ft/team-page
  2020  git add .
