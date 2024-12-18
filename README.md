@@ -338,3 +338,17 @@ Successfully enabled github pages on my repo passing in settings
 git add .
 git commit -m "changed the index html header"
 git push
+
+## Bundle 6
+
+### Exercise 1
+
+```Bash
+ 2007  git branch
+ 2008  git checkout -b  ft/menu
+ 2009  git add ..
+ 2010  git add .
+ 2011  git commit -m "added a new menu page"
+ 2012  git push
+ 2013  git push --set-upstream origin ft/menu
+```
