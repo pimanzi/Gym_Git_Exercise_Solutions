@@ -218,3 +218,57 @@ To https://github.com/pimanzi/Gym_Git_Exercise_Solutions.git
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 /Gym_Git_Exercise_Solutions$
 ```
+
+## BUNDLE 2
+
+### EXERCISE 2
+
+````Bash
+
+## BUNDLE 2
+
+### EXERCISE 1
+
+```Bash
+
+/Gym_Git_Exercise_Solutions$ git branch
+* main
+/Gym_Git_Exercise_Solutions$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+/Gym_Git_Exercise_Solutions$
+/Gym_Git_Exercise_Solutions$ touch services.html
+/Gym_Git_Exercise_Solutions$ git add .
+/Gym_Git_Exercise_Solutions$ git commit -m "added service page"
+[ft/bundle-2 56f91cd] added service page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+/Gym_Git_Exercise_Solutions$ git push
+fatal: The current branch ft/bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bundle-2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+/Gym_Git_Exercise_Solutions$ git push --set-upstream origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 444 bytes | 444.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/pimanzi/Gym_Git_Exercise_Solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/pimanzi/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+/Gym_Git_Exercise_Solutions$
+````
+
+```
+
+```
