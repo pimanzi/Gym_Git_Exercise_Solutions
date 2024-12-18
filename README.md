@@ -86,8 +86,6 @@ To https://github.com/pimanzi/Gym_Git_Exercise_Solutions.git
 branch 'dev' set up to track 'origin/dev'
 ```
 
-## BUNDLE 1
-
 ### EXERCISE 2
 
 ```Bash
@@ -219,8 +217,6 @@ branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 /Gym_Git_Exercise_Solutions$
 ```
 
-## BUNDLE 2
-
 ### EXERCISE 2
 
 ```Bash
@@ -284,8 +280,6 @@ git branch
  2044  git push
 ```
 
-## BUNDLE 3
-
 ### EXERCISE 2
 
 ```Bash
@@ -316,8 +310,6 @@ git branch
  2089  git push git-copy
 ```
 
-## Bundle 4
-
 ### EXERCISE 2
 
 ```Bash
@@ -334,3 +326,15 @@ git branch
  2115  git commit -m "adding a footer page"
  2116  git push
 ```
+
+## Bundle 5
+
+### Exercise 1
+
+Successfully enabled github pages on my repo passing in settings
+
+### Exercise 2
+
+git add .
+git commit -m "changed the index html header"
+git push
