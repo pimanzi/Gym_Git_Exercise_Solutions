@@ -283,3 +283,21 @@ git branch
  2043  git commit -m "removing the team page"
  2044  git push
 ```
+
+## BUNDLE 3
+
+### EXERCISE 2
+
+```Bash
+
+ git branch
+ 2062  git checkout ft/faq-page
+ 2064  git branch
+ 2066  git checkout -b ft/home-page-redesign
+ 2067  git checkout main
+ 2068  git add .
+ 2069  git commit -m "changing the about html"
+ 2070  git push
+ 2071  git checkout ft/home-page-redesign
+ 2072  git rebase main
+```
