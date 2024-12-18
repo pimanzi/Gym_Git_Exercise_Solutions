@@ -304,7 +304,7 @@ git branch
 
 ## Bundle 4
 
-### EXERCISE !
+### EXERCISE 1
 
 ```Bash
  git branch
@@ -314,4 +314,23 @@ git branch
  2086  git push
  2088  git push
  2089  git push git-copy
+```
+
+## Bundle 4
+
+### EXERCISE 2
+
+```Bash
+2104  git checkout -b ft/footer
+ 2106  git add .
+ 2107  git commit -m "added footer page"
+ 2108  git add .
+ 2109  git commit -m "changed the footer"
+ 2110  git push
+ 2111  git checkout main
+ 2112  git checkout -b ft/squashing
+ 2113  git merge --squash ft/footer
+ 2114  git status
+ 2115  git commit -m "adding a footer page"
+ 2116  git push
 ```
