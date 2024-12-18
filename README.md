@@ -218,3 +218,39 @@ To https://github.com/pimanzi/Gym_Git_Exercise_Solutions.git
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 /Gym_Git_Exercise_Solutions$
 ```
+
+# BUNDLE 3
+
+### EXERCISE 1
+
+```Bash
+
+ 2015  git branch
+ 2016  git checkout main
+ 2017  git checkout -b ft/team-page
+ 2020  git add .
+ 2021  git commit -m "adding a team page"
+ 2022  git push
+ 2023  git push --set-upstream origin ft/team-page
+ 2024  git checkout main
+ 2025  git checkout -b ft/contact-page
+ 2026  git checkout ft/team-page
+ 2027  git log
+ 2028  git checkout ft/contact-page
+ 2029  git cherry-pick 00942489dc09fc0407344d2114f4bea1365d3bf3
+ 2030  git add .
+ 2031  git commit -m "adding pages"
+ 2032  git push
+ 2033  git branch
+ 2034  git checkout -b ft/faq-page
+ 2035  git add .
+ 2036  git pcommt -m "adding faq page"
+ 2037  git pcommit -m "adding faq page"
+ 2038  git commit -m "adding faq page"
+ 2039  git push
+ 2040  git push --set-upstream origin ft/faq-page
+ 2041  git revert 00942489dc09fc0407344d2114f4bea1365d3bf3
+ 2042  git add .
+ 2043  git commit -m "removing the team page"
+ 2044  git push
+```
