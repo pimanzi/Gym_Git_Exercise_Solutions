@@ -301,3 +301,17 @@ git branch
  2071  git checkout ft/home-page-redesign
  2072  git rebase main
 ```
+
+## Bundle 4
+
+### EXERCISE !
+
+```Bash
+ git branch
+ 2082  git remote add git-copy https://github.com/pimanzi/Gym_Git_Exercises_Clone.git
+ 2084  git add .
+ 2085  git commit -m "updating home page"
+ 2086  git push
+ 2088  git push
+ 2089  git push git-copy
+```
