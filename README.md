@@ -352,3 +352,15 @@ git push
  2012  git push
  2013  git push --set-upstream origin ft/menu
 ```
+
+### Exercise 2
+
+```Bash
+ 2017  git checkout main
+ 2019  git checkout -b ft/bug
+ 2020  git  add .
+ 2021  git commit -m "changed the title of index-4.html"
+ 2022  git push
+ 2023  git push --set-upstream origin ft/bug
+ 2025  history | awk '/git/ {print $0}'
+```
