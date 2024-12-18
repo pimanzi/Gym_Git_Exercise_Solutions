@@ -364,3 +364,18 @@ git push
  2023  git push --set-upstream origin ft/bug
  2025  history | awk '/git/ {print $0}'
 ```
+
+### Exercise 3
+
+```Bash
+2037  git branch
+ 2038  git checkout -b ft/contact
+ 2039  git add .
+ 2040  git commit -m "changed phone number"
+ 2041  git push
+ 2042  git push --set-upstream origin ft/contact
+```
+
+### Exercise 4
+
+Successfully done peer review and requested for pull requests
